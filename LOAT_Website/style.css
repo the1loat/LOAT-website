@@ -1,0 +1,324 @@
+body{
+    background-color:rgb(0, 0, 0);
+    color:orange;
+    font-family:  "Agency FB", Arial, sans-serif;
+}
+
+.he1{
+    position: absolute;
+    left: 0;
+    right:0;
+    top:0;
+    border-radius: 250px;;
+    height:800px;
+    margin: -300px  0px 0px 0px;
+    background-color:rgb(122, 16, 16);
+}
+
+.nav1{
+    margin: 300px 0px 0px 0px;
+    background-color:blueviolet;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+.c1{
+    font-size: 40px;
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-size: larger;
+}
+.nav1 button {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+a:hover{
+    text-decoration:overline;
+    COLOR:RED;
+}
+.c1:hover{
+    font-size: 40px;
+    text-decoration:wavy;
+    color:black;
+}
+
+.nav1 button:hover {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(0, 0, 0, 0.189);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+a:active{
+    text-decoration:line-through;
+    color:rgb(0, 0, 0);
+    font-size: larger;
+}
+a:linked{
+    text-decoration:underline;
+    color:rgb(0, 0, 0);
+    font-size: larger;
+}
+
+
+
+
+
+.cu1{
+    MARGIN: 10px 0px 0px 0px;
+    width:180px;
+    height:150px;
+    border-style: solid;
+    border-color:brown;
+    border-radius: 100px;
+}
+.cu1:hover{
+    MARGIN: 7px 0px 0px 0px;
+    width:180px;
+    height:150px;
+    border-style: solid;
+    border-color:brown;
+    border-radius: 100px;
+    box-shadow: 0px 170px 90px blueviolet;
+}
+
+
+
+.hi{
+    margin: 510px 0px 0px 0px;
+    COLOR:WHITE;
+    text-align:center;
+}
+
+.bc{
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+ 
+.b1{
+    width: 250px;
+    height: 300px;
+    background-color:rgba(137, 43, 226, 0.452);
+    color:rgb(0, 0, 0);
+    font-size: 13px;
+    text-align: center;
+    border-radius: 25px;
+}
+.hh1{
+    color:rgb(249, 249, 249);
+    font-size: 12px;
+    text-align: center;
+}
+.hh2{
+    color:rgb(255, 255, 255);
+    font-size: 12px;
+    text-align: center;
+}
+
+.hh3{
+    color:rgb(255, 255, 255);
+    font-size: 12px;
+    text-align: center;
+}
+
+.hhh1{
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+    letter-spacing: 1px;
+    background-color:rgb(0, 0, 0);
+    height: 1300px;
+    width: 590px;
+    color:green;
+    border-style:solid;
+    border-color:rgb(0, 0, 0);
+    box-shadow: 0px 0px 100px blueviolet;
+}
+
+
+.bc2{
+    display:flex;
+    font-family: 'Fira Code', monospace;
+    letter-spacing: 1px;
+}
+.t1{
+    width: 400px;
+    height: 350px;
+    border-style: solid;
+    border-color: blueviolet;
+    border-radius: 53px;;
+}
+.bb2{
+    width:400px;
+    height: 300px;
+    background-color:rgb(0, 0, 0);
+}
+
+footer{
+    background-color: blueviolet;
+    height:100px;
+    position: absolute;
+    right:0;
+    left:0;
+    border-radius: 60px;
+    MARGIN: 20PX 0PX 20PX 0PX;
+}
+
+
+h4{
+    margin: 0px 0px 0px 50px;
+}
+h3{
+    margin: 0px 0px 0px 50px;
+}
+
+.fff{
+    width: 400px;
+    height: 40px;
+    margin: -70px 0px 0px 50px;
+}
+
+.logg{
+            width: 330px;
+            height: 350px;
+            background-color:blueviolet;
+            margin: 89px 0px 0px 0px;
+            border-radius: 90px;
+        }
+        .logg:hover{
+            width: 330px;
+            height: 350px;
+            background-color:rgb(93, 0, 180);
+            margin: 80px 0px 0px 0px;
+            border-radius: 90px;
+            box-shadow: 10px 10px 100px rgb(35, 173, 227);
+        }
+        .gnder{
+            text-align: left;
+            margin: 0px 0px 0px 45px;
+        }
+        .email{
+            width: 180px;
+            height: 30px;
+            background-color:rgba(176, 184, 222, 0.749);
+            color: rgb(0, 0, 0);
+            border-radius: 15px;
+            box-shadow: 10px 10px 10px rgb(22, 53, 88);
+        }
+        .password{
+            width: 180px;
+            height: 30px;
+            background-color:rgba(176, 184, 222, 0.749);
+            color: rgb(0, 0, 0);
+            border-radius: 15px;
+            box-shadow: 10px 10px 10px rgb(22, 53, 88);
+        }
+        .but{
+            background-color:rgb(53, 53, 255);
+            width: 150px;
+            height: 35px;
+            border-radius: 40px;
+            box-shadow: 10px 10px 10px rgb(22, 53, 88);
+            margin: 35px 0px 0px 0px;
+        }
+@media (max-width:840px){
+    .t2{
+        width: 440px;
+        height:400px;
+      }
+      .t1{
+        width: 270px;
+        height: 320px;
+        border-style: solid;
+        border-color: blueviolet;
+}
+}
+@media(max-width: 600px){
+    .bc {
+        flex-direction: column;
+        align-items: center;
+      }
+      .b {
+        width: 90%;
+        height: 150px;
+        line-height: 150px;
+      }
+      .hhh1{
+        height: 420px;
+        width: 300px;
+        font-size:4px;
+      }
+      .t1{
+        width: 370px;
+        height: 300px;
+        border-style: solid;
+        border-color: blueviolet;
+}
+.bc2{
+    display:inline;
+    font-family: 'Fira Code', monospace;
+    letter-spacing: 1px;
+    justify-content: space-around;
+}
+      .bb2{
+        text-align: center;
+      }
+      .t2{
+        width: 400px;
+        height:400px;
+      }
+      .nav1{
+        font-size: 10px;
+      }
+      .Sign{
+        height: 20px;
+        width: 50px;
+        font-size: 7px;
+      }
+    
+}
+@media (max-width: 490px){
+    .nav1{
+        font-size: 7px;
+      }
+      .Sign{
+        height: 20px;
+        width: 50px;
+        font-size: 7px;
+      }
+      .t2{
+        width: 240px;
+        height:200px;
+      }
+      .t1{
+        width: 170px;
+        height: 220px;
+        border-style: solid;
+        border-color: blueviolet;
+}
+}
+
+@media (max-width: 490px){
+    .nav1{
+        font-size: 4.5px;
+      }
+      .Sign{
+        height: 17px;
+        width: 45px;
+        font-size: 5px;
+      }
+      .bb2{
+        font-size: 15px;
+      }
+}

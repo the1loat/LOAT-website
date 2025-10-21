@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 
+        LOAT-Leader Of All Time</title>
+        <link rel="stylesheet" href="style.css">
+            <link rel="icon" type="image/jpg" href="photes/current_logo.jpg" class="logo1">
+</head>
+<body> 
+    <header class="he1">
+    <nav class="nav1">
+        <a href="index.html" class="c1" >LOAT</a>
+        <a href="index.html">Home</a>
+        <a href="what_we_do.html">What We Do</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Team.html">Team</a>
+        <a href="Contact.html">Contact</a>
+        <a href="News.html">News</a>
+        <a href="Sign_Up.html"><button class="Sign">Sign Up</button></a>
+        <a href="Log_in.html"><button class="Sign">Log in</button></a>
+    </nav>
+    <CENTER>
+        <H1>PROJECT</H1>
+    </CENTER>
+    <CENTER> <img src="photes/current_logo.jpg" class="cu1"> <br><h1><B>Leader <br> Of <BR> All <br>Time</B></h1> </CENTER>
+    </header>
+    <h1 class="hi">Welcome to LOAT Leader of All Time.</h1>
+    <br><br><br><br><br>
+    </CENTER>
+    </header>
+    <center>
+        <H1>CALCULATOR</H1>
+    <div class="cover">
+        <input type="text" placeholder="0000000" class="in" id="display">
+        <div class="yellow">
+            <div class="y1" id="y1"onclick="clearDisplay()"><br>AC</div>
+            <div class="y2" id="y2"><br>+/-</div>
+            <div class="y3" id="y3"><br>%</div>
+            <div class="y4" id="y4"onclick="appendcalculator('/')"><br>/</div>
+        </div>
+
+        <div class="second">
+            <div class="s1" id="s1" onclick="appendcalculator('7')"><br>7</div>
+            <div class="s2" id="s2"onclick="appendcalculator('8')"><br>8</div>
+            <div class="s3" id="s3"onclick="appendcalculator('9')"><br>9</div>
+            <div class="s4" id="s4"onclick="appendcalculator('*')"><br>x</div>
+        </div>
+
+        <div class="third">
+            <div class="z1" id="z1"onclick="appendcalculator('4')"><br>4</div>
+            <div class="t2" id="t2" onclick="appendcalculator('5')"><br>5</div>
+            <div class="t3" id="t3"onclick="appendcalculator('6')"><br>6</div>
+            <div class="t4" id="t4"onclick="appendcalculator('-')"><br>-</div>
+        </div>
+
+        <div class="fourth">
+            <div class="f1" id="f1"onclick="appendcalculator('1')"><br>1</div>
+            <div class="f2" id="f2"onclick="appendcalculator('2')"><br>2</div>
+            <div class="f3" id="f3"onclick="appendcalculator('3')"><br>3</div>
+            <div class="f4" id="f4"onclick="appendcalculator('+')"><br>+</div>
+        </div>
+
+        <div class="fifth">
+            <div class="ff1" id="ff1"onclick="appendcalculator('0')"><br>0</div>
+            <div class="ff2" id="ff2"onclick="appendcalculator('.')"><br>.</div>
+            <div class="ff3" id="ff3"onclick="calculate()"><br>=</div>
+        </div>
+    </div>
+    </center>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <center><div class="pro">
+        <h1>Profile info</h1>
+        <img src="photes/profile.jpg" class="prop">
+    </div></center>
+    <br><br><br><br>
+    <center>
+        <div class="clocl_c" id="clocl_c">
+        <span id="hr"> 00 </span>
+        <span> : </span>
+        <span id="min"> 00 </span>
+        <span> : </span>
+        <span id="sec"> 00 </span>
+    </div>
+    </center>
+    <br><br><br> <br> <br>
+    <center>
+        <div class="kc">
+            <input type="text" id="searcher" placeholder="Enter what you want"> <br><br><br><br><br><br>
+        <button class="qqq" onclick="appendValue('q')">Q</button>
+        <button class="qqq" onclick="appendValue('w')">w</button>
+        <button class="qqq" onclick="appendValue('e')">e</button>
+        <button class="qqq" onclick="appendValue('r')">r</button>
+        <button class="qqq" onclick="appendValue('t')">t</button>
+        <button class="qqq" onclick="appendValue('y')">y</button>
+        <button class="qqq" onclick="appendValue('u')">u</button>
+        <button class="qqq" onclick="appendValue('i')">i</button>
+        <button class="qqq" onclick="appendValue('o')">o</button>
+        <button class="qqq" onclick="appendValue('p')">p</button>
+
+
+            <br><br>
+
+
+        <button class="qqq" onclick="appendValue('a')">a</button>
+        <button class="qqq" onclick="appendValue('s')">s</button>
+        <button class="qqq" onclick="appendValue('d')">d</button>
+        <button class="qqq" onclick="appendValue('f')">f</button>
+        <button class="qqq" onclick="appendValue('g')">g</button>
+        <button class="qqq" onclick="appendValue('h')">h</button>
+        <button class="qqq" onclick="appendValue('j')">j</button>
+        <button class="qqq" onclick="appendValue('k')">k</button>
+        <button class="qqq" onclick="appendValue('l')">l</button>
+
+            <br> <br>
+
+        <button class="qqq" onclick="appendValue('z')">z</button>
+        <button class="qqq" onclick="appendValue('x')">x</button>
+        <button class="qqq" onclick="appendValue('c')">c</button>
+        <button class="qqq" onclick="appendValue('v')">v</button>
+        <button class="qqq" onclick="appendValue('b')">b</button>
+        <button class="qqq" onclick="appendValue('n')">n</button>
+        <button class="qqq" onclick="appendValue('m')">m</button>
+    </div>
+    </center>
+    <br><br><br><br>
+    <center>
+        <form id="all">
+            <label for="username" name="username">username :: </label>
+            <input type="username" name="username" id="username" required>
+            <br> <br>
+            <label for="password" name="password">password :: </label>
+            <input type="password" name="password" id="password" required>
+            <br> <br>
+            <button onclick="saving()" ID="BUTTON1" type="button"> Submit </button>
+        </form>
+    </center>
+    <STYLE>
+         #all{
+            margin: 200px 0px 0px 0px;
+            background-color:blueviolet;
+            height: 150px;
+            width: 500px;
+            padding: 40px 0px 50px 0px;
+            border-radius: 10px 70px 10px 60px;
+            color:aliceblue;
+            font-size: 20px;
+            box-shadow: 2px 2px 10px grey;
+        }
+        #all:hover{
+            margin: 200px 0px 0px 0px;
+            background-color:rgb(127, 32, 216);
+            height: 150px;
+            width: 500px;
+            padding: 40px 0px 50px 0px;
+            border-radius: 10px 70px 10px 61px;
+            color:aliceblue;
+            font-size: 20px;
+            box-shadow: 10px 10px 90px grey;
+        }
+        #username{
+            width: 300px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 20px;
+            box-shadow: 2px 2px 10px blue;
+        }
+        #password{
+            width: 300px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 20px;
+            box-shadow: 2px 2px 10px blue;
+        }
+        #username:hover{
+            width: 300px;
+            height: 40px;
+            background-color:antiquewhite;
+            border-radius: 23px;
+            font-size: 20px;
+            box-shadow: 10px 10px 20px rgb(83, 83, 83);
+        }
+
+        #password:hover{
+            width: 300px;
+            height: 40px;
+            background-color:antiquewhite;
+            border-radius: 23px;
+            font-size: 20px;
+            box-shadow: 10px 10px 20px rgb(83, 83, 83);
+        }
+        #BUTTON1{
+            background-color:rgb(34, 218, 138);
+            color:aliceblue;
+            height: 35px;
+            width:140px;
+            border-radius: 35px;
+        }
+
+        #BUTTON1:hover{
+            background-color:rgb(14, 194, 116);
+            color:aliceblue;
+            height: 35px;
+            width:140px;
+            margin: -2px 0px 0px 0px;
+            box-shadow: 6px 6px 15px rgb(61, 61, 234);
+            border-radius: 35px;
+        }
+
+
+        @media(max-width: 550px){
+
+             #all{
+                margin: 200px 0px 0px 0px;
+                background-color:blueviolet;
+                height: 75px;
+                width: 250px;
+                padding: 20px 0px 25px 0px;
+                border-radius: 5px 35px 35px 30px;
+                color:aliceblue;
+                font-size: 10px;
+                box-shadow: 2px 2px 10px grey;
+        }
+        #all:hover{
+            margin: 200px 0px 0px 0px;
+            background-color:rgb(127, 32, 216);
+            height: 75px;
+            width: 250px;
+            padding: 20px 0px 25px 0px;
+            border-radius: 5px 35px 5px 30px;
+            color:aliceblue;
+            font-size: 10px;
+            box-shadow: 10px 10px 90px grey;
+        }
+        #username{
+            width: 150px;
+            height: 20px;
+            border-radius: 10px;
+            font-size: 10px;
+            box-shadow: 2px 2px 10px blue;
+        }
+        #password{
+            width: 150px;
+            height: 20px;
+            border-radius: 10px;
+            font-size: 10px;
+            box-shadow: 2px 2px 10px blue;
+        }
+        #username:hover{
+            width: 150px;
+            height: 20px;
+            background-color:antiquewhite;
+            border-radius: 13px;
+            font-size: 10px;
+            box-shadow: 10px 10px 20px rgb(83, 83, 83);
+        }
+
+        #password:hover{
+            width: 150px;
+            height: 20px;
+            background-color:antiquewhite;
+            border-radius: 13px;
+            font-size: 10px;
+            box-shadow: 10px 10px 20px rgb(83, 83, 83);
+        }
+        #BUTTON1{
+            background-color:rgb(34, 218, 138);
+            color:aliceblue;
+            height: 20px;
+            width:70px;
+            border-radius: 20px;
+        }
+
+        #BUTTON1:hover{
+            background-color:rgb(14, 194, 116);
+            color:aliceblue;
+            height: 20px;
+            width:70px;
+            margin: -2px 0px 0px 0px;
+            box-shadow: 6px 6px 15px rgb(61, 61, 234);
+            border-radius: 20px;
+        }
+        }
+        .kc{
+            margin: 150px 0px 0px 0px;
+        }
+        .qqq{
+            width: 100px;
+            height: 45px;
+            background-color:rgba(131, 0, 191, 0.742);
+            color:aliceblue;
+            font-size: 22px;
+            border-radius: 19px;;
+            box-shadow: 2px 2px 6px rgb(107, 107, 107);
+        }
+         .qqq:hover{
+            width: 100px;
+            height: 45px;
+            background-color:rgb(220, 58, 252);
+            color:aliceblue;
+            font-size: 22px;
+            border-radius: 19px;
+            box-shadow: 5px 10px 10px rgb(107, 107, 107);
+        }
+        #searcher{
+            width: 900px;
+            height: 80px;
+            font-size: 30px;
+            border-radius: 39px;;
+            color:rgb(255, 255, 255);
+            background-color:rgb(54, 52, 52);
+            box-shadow: 0px 0px 600px rgb(187, 44, 239);
+        }
+        @media (max-width: 1080px){
+            .kc{
+            margin: 150px 0px 0px 0px;
+        }
+            .qqq{
+            width: 60px;
+            height: 30px;
+            background-color:rgba(131, 0, 191, 0.742);
+            color:aliceblue;
+            font-size: 16px;
+            border-radius: 19px;;
+            box-shadow: 2px 2px 6px rgb(107, 107, 107);
+        }
+         .qqq:hover{
+           width: 60px;
+            height: 30px;
+            background-color:rgb(220, 58, 252);
+            color:aliceblue;
+            font-size: 16px;  
+            border-radius: 19px;
+            box-shadow: 5px 10px 10px rgb(107, 107, 107);
+        }
+        #searcher{
+            width: 500px;
+            height: 60px;
+            font-size: 30px;
+            border-radius: 39px;;
+        }
+        }
+        @media (max-width: 680px){
+            .qqq{
+            width: 40px;
+            height: 17px;
+            background-color:rgba(131, 0, 191, 0.742);
+            color:aliceblue;
+            font-size: 8px;
+            border-radius: 19px;;
+            box-shadow: 2px 2px 6px rgb(107, 107, 107);
+        }
+         .qqq:hover{
+            width: 40px;
+            height: 17px;
+            background-color:rgb(220, 58, 252);
+            color:aliceblue;
+            font-size: 8px;
+            border-radius: 19px;
+            box-shadow: 5px 10px 10px rgb(107, 107, 107);
+        }
+        #searcher{
+            width: 350px;
+            height: 40px;
+            font-size: 15px;
+            border-radius: 39px;;
+        }
+        }
+
+        @media (max-width: 460px){
+            .qqq{
+            width: 20px;
+            height: 8px;
+            background-color:rgba(131, 0, 191, 0.742);
+            color:aliceblue;
+            font-size: 4px;
+            border-radius: 10px;;
+            box-shadow: 2px 2px 6px rgb(107, 107, 107);
+        }
+         .qqq:hover{
+            width: 20px;
+            height: 10px;
+            background-color:rgb(220, 58, 252);
+            color:aliceblue;
+            font-size: 4px;
+            border-radius: 10px;
+            box-shadow: 5px 10px 10px rgb(107, 107, 107);
+        }
+        #searcher{
+            width: 250px;
+            height: 20px;
+            font-size: 10px;
+            border-radius: 19px;;
+        }
+        }
+        .clocl_c{
+            background-color:blueviolet;
+            width: 450px;
+            height: 100px;
+            text-align:center; 
+            font-size: 80px;
+            color:aliceblue;
+            margin: 200px 0px 0px 0px; 
+            border-radius: 21px;
+            box-shadow: 8px 8px 40px blueviolet;
+        }
+        @media (max-width: 600px){
+            .clocl_c{
+                background-color:blueviolet;
+                width: 270px;
+                height: 70px;
+                text-align:center; 
+                font-size: 50px;
+                color:aliceblue;
+                margin: 200px 0px 0px 0px; 
+                border-radius: 21px;
+                box-shadow: 2px 3px 40px blueviolet;
+        }
+        }
+        .prop{
+            border-style: solid;
+            border-color:blueviolet;
+            width: 450px;
+            height: 550px;
+        }
+
+        @media(max-width: 500px){
+            .prop{
+                border-style: solid;
+                border-color:blueviolet;
+                width: 225px;
+                height: 275px;
+        }
+        }
+        .cover{
+    background-color: #242121;
+    width: 320px;
+    height: 450px; 
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 0px 0px;
+    border-radius: 15px;
+    padding: 20px 0px 0px 0px;
+}
+.in{
+    width: 300px;
+    background-color:#2c2c2c;
+    border-color: #000000;
+    height: 70px;
+    color:aliceblue;
+    font-size: 50px;
+    text-align: right;
+    border-radius: 24px;
+}
+.yellow{
+    height: 60px;
+    width: 300px;
+    margin: 10px 0px 0px 0px;
+    display:flex;
+    justify-content: space-between;
+}
+.y1{
+    background-color:rgb(195, 192, 192);
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.y2{
+    background-color:rgb(195, 192, 192);
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.y3{
+    background-color:rgb(195, 192, 192);
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.y4{
+    background-color:orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.y1:hover{
+    background-color:rgb(195, 192, 192);
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px rgb(168, 165, 165);
+}
+.y2:hover{
+    background-color:rgb(195, 192, 192);
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px rgb(168, 165, 165);
+}
+.y3:hover{
+    background-color:rgb(195, 192, 192);
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px rgb(168, 165, 165);
+}
+.y4:hover{
+    background-color:orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px orange;
+}
+.second{
+    height: 60px;
+    width: 300px;
+    margin: 10px 0px 0px 0px;
+    display:flex;
+    justify-content: space-between;
+}
+.s1{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.s2{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.s3{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.s4{
+    background-color:orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.s1:hover{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px rgb(119, 116, 116);
+}
+.s2:hover{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px rgb(119, 116, 116);
+}
+.s3:hover{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px rgb(119, 116, 116);
+}
+.s4:hover{
+    background-color:orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px orange;
+}
+
+.third{
+    height: 60px;
+    width: 300px;
+    margin: 10px 0px 0px 0px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.z1{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.t2{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.t3{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.t4{
+    background-color:orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.z1:hover{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px rgb(119, 116, 116);
+}
+.t2:hover{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px rgb(119, 116, 116);
+}
+.t3:hover{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px rgb(119, 116, 116);
+}
+.t4:hover{
+    background-color:orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px orange;
+}
+
+.fourth{
+    height: 60px;
+    width: 300px;
+    margin: 10px 0px 0px 0px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.f1{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.f2{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.f3{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.f4{
+    background-color:orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+
+.f1:hover{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px rgb(119, 116, 116);
+}
+.f2:hover{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px rgb(119, 116, 116);
+}
+.f3:hover{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px rgb(119, 116, 116);
+}
+.f4:hover{
+    background-color:orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px orange;
+}
+.fifth{
+    height: 60px;
+    width: 300px;
+    margin: 10px 0px 0px 0px;
+    display:flex;
+    justify-content: space-between;
+}
+.ff1{
+    background-color:grey;
+    height: 50px;
+    width: 130px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.ff2{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.ff3{
+    background-color:orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+.ff1:hover{
+    background-color:grey;
+    height: 50px;
+    width: 130px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px rgb(119, 116, 116);
+}
+.ff2:hover{
+    background-color:grey;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px rgb(119, 116, 116);
+}
+
+.ff3:hover{
+    background-color:orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 35px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    border-style: solid;
+    border-color: #727171;
+    box-shadow: 5px 1px 20px orange;
+}
+@media(max-width:700px){
+    .prop{
+        width: 440px;
+        height: 700px;
+    }
+}
+    </STYLE>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    let display = document.getElementById("display");
+    function appendcalculator (val){
+        display.value +=val;
+    }
+
+    function clearDisplay(){
+        display.value = "";
+    }
+
+    function calculate(){
+            try{
+                display.value = eval(display.value);
+            }
+            catch{
+                display.value = "Error";
+            }
+    }
+    let hr = document.getElementById("hr");
+        let min = document.getElementById("min");
+        let sec = document.getElementById("sec");
+
+        setInterval(()=>{
+            currentTime = new Date();
+            hr.innerHTML = currentTime.getHours();
+            min.innerHTML = currentTime.getMinutes();
+            sec.innerHTML = currentTime.getSeconds();
+        
+        },1000)
+
+        let searcher = document.getElementById("searcher");
+
+        function appendValue(val){
+            searcher.value += val;
+
+        }
+
+
+        attempts = 0;
+        function saving(){
+            if(attempts >= 3){
+                alert("sorry more than 3 times is not allowed")
+                return;
+            }
+            name = document.getElementById("username").value;
+            passw = document.getElementById("password").value;
+            if((name == "Abbas" || name == "LOAT" )&& passw == "1234"){
+                document.write("<h1> <i> === Welcome ",name," to your page again=== </i> </h1>")
+                
+            }
+            else{
+                    alert("so sorry something went wrong!!")
+                    attempts++
+                    if (attempts == 3){
+                        alert(" sorry  you tried 3 time and refresh the page to try again")
+                    }
+                }
+            
+        }
+</script>
+</body>
+</html>

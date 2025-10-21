@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOAT</title>
+</head>
+<body>
+    <center>
+        <form id="all">
+            <label for="username" name="username">username :: </label>
+            <input type="username" name="username" id="username" required>
+            <br> <br>
+            <label for="password" name="password">password :: </label>
+            <input type="password" name="password" id="password" required>
+            <br> <br>
+            <button onclick="saving()" ID="BUTTON1" type="button"> Submit </button>
+        </form>
+    </center>
+
+    <style>
+        #all{
+            margin: 200px 0px 0px 0px;
+            background-color:blueviolet;
+            height: 150px;
+            width: 500px;
+            padding: 40px 0px 50px 0px;
+            border-radius: 10px 70px 10px 60px;
+            color:aliceblue;
+            font-size: 20px;
+            box-shadow: 2px 2px 10px grey;
+        }
+        #all:hover{
+            margin: 200px 0px 0px 0px;
+            background-color:rgb(127, 32, 216);
+            height: 150px;
+            width: 500px;
+            padding: 40px 0px 50px 0px;
+            border-radius: 10px 70px 10px 61px;
+            color:aliceblue;
+            font-size: 20px;
+            box-shadow: 10px 10px 90px grey;
+        }
+        #username{
+            width: 300px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 20px;
+            box-shadow: 2px 2px 10px blue;
+        }
+        #password{
+            width: 300px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 20px;
+            box-shadow: 2px 2px 10px blue;
+        }
+        #username:hover{
+            width: 300px;
+            height: 40px;
+            background-color:antiquewhite;
+            border-radius: 23px;
+            font-size: 20px;
+            box-shadow: 10px 10px 20px rgb(83, 83, 83);
+        }
+
+        #password:hover{
+            width: 300px;
+            height: 40px;
+            background-color:antiquewhite;
+            border-radius: 23px;
+            font-size: 20px;
+            box-shadow: 10px 10px 20px rgb(83, 83, 83);
+        }
+        #BUTTON1{
+            background-color:rgb(34, 218, 138);
+            color:aliceblue;
+            height: 35px;
+            width:140px;
+            border-radius: 35px;
+        }
+
+        #BUTTON1:hover{
+            background-color:rgb(14, 194, 116);
+            color:aliceblue;
+            height: 35px;
+            width:140px;
+            margin: -2px 0px 0px 0px;
+            box-shadow: 6px 6px 15px rgb(61, 61, 234);
+            border-radius: 35px;
+        }
+
+
+        @media(max-width: 550px){
+
+             #all{
+                margin: 200px 0px 0px 0px;
+                background-color:blueviolet;
+                height: 75px;
+                width: 250px;
+                padding: 20px 0px 25px 0px;
+                border-radius: 5px 35px 35px 30px;
+                color:aliceblue;
+                font-size: 10px;
+                box-shadow: 2px 2px 10px grey;
+        }
+        #all:hover{
+            margin: 200px 0px 0px 0px;
+            background-color:rgb(127, 32, 216);
+            height: 75px;
+            width: 250px;
+            padding: 20px 0px 25px 0px;
+            border-radius: 5px 35px 5px 30px;
+            color:aliceblue;
+            font-size: 10px;
+            box-shadow: 10px 10px 90px grey;
+        }
+        #username{
+            width: 150px;
+            height: 20px;
+            border-radius: 10px;
+            font-size: 10px;
+            box-shadow: 2px 2px 10px blue;
+        }
+        #password{
+            width: 150px;
+            height: 20px;
+            border-radius: 10px;
+            font-size: 10px;
+            box-shadow: 2px 2px 10px blue;
+        }
+        #username:hover{
+            width: 150px;
+            height: 20px;
+            background-color:antiquewhite;
+            border-radius: 13px;
+            font-size: 10px;
+            box-shadow: 10px 10px 20px rgb(83, 83, 83);
+        }
+
+        #password:hover{
+            width: 150px;
+            height: 20px;
+            background-color:antiquewhite;
+            border-radius: 13px;
+            font-size: 10px;
+            box-shadow: 10px 10px 20px rgb(83, 83, 83);
+        }
+        #BUTTON1{
+            background-color:rgb(34, 218, 138);
+            color:aliceblue;
+            height: 20px;
+            width:70px;
+            border-radius: 20px;
+        }
+
+        #BUTTON1:hover{
+            background-color:rgb(14, 194, 116);
+            color:aliceblue;
+            height: 20px;
+            width:70px;
+            margin: -2px 0px 0px 0px;
+            box-shadow: 6px 6px 15px rgb(61, 61, 234);
+            border-radius: 20px;
+        }
+        }
+    </style>
+
+
+
+    <script>
+        attempts = 0;
+        function saving(){
+            if(attempts >= 3){
+                alert("sorry more than 3 times is not allowed")
+                return;
+            }
+            name = document.getElementById("username").value;
+            passw = document.getElementById("password").value;
+            if((name == "Abbas" || name == "LOAT" )&& passw == "1234"){
+                document.write("<h1> <i> === Welcome ",name," to your page again=== </i> </h1>")
+                
+            }
+            else{
+                    alert("so sorry something went wrong!!")
+                    attempts++
+                    if (attempts == 3){
+                        alert(" sorry  you tried 3 time and refresh the page to try again")
+                    }
+                }
+            
+        }
+    </script>
+</body>
+</html>

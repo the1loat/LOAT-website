@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 
+        LOAT-Leader Of All Time</title>
+        <link rel="stylesheet" href="style.css">
+            <link rel="icon" type="image/jpg" href="photes/current_logo.jpg" class="logo1">
+
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+                (function(){
+                    emailjs.init({
+                    publicKey: "bCtYzXClX5wnZsKEk",
+                  });
+              })();
+            </script>
+</head>
+<body> 
+    <nav class="nav11">
+        <a href="index.html" class="c1" >LOAT</a>
+        <a href="index.html">Home</a>
+        <a href="what_we_do.html">What We Do</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Team.html">Team</a>
+        <a href="Contact.html">Contact</a>
+        <a href="News.html">News</a>
+        <a href="Sign_Up.html"><button class="Sign">Sign Up</button></a>
+        <a href="Log_in.html"><button class="Sign">Log in</button></a>
+    </nav>
+    <CENTER>
+        <H1>LOG IN</H1>
+    </CENTER>
+    </header>
+    
+    <center>
+        <form id="all">
+            <label for="username" name="username">username :: </label>
+            <input type="username" name="username" id="username" required>
+            <br> <br>
+            <label for="password" name="password">password :: </label>
+            <input type="password" name="password" id="password" required>
+            <br> <br>
+            <button onclick="saving()" ID="BUTTON1" type="button"> Submit </button>
+        </form>
+    </center>
+    <style>
+        .nav11{
+            background-color:blueviolet;
+            height: 60px;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left:0;
+            right:0;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            flex-wrap: wrap;
+        }
+        @media (max-width:840px){
+    .t2{
+        width: 440px;
+        height:400px;
+      }
+      .t1{
+        width: 270px;
+        height: 320px;
+        border-style: solid;
+        border-color: blueviolet;
+}
+}
+@media(max-width: 600px){
+    .bc {
+        flex-direction: column;
+        align-items: center;
+      }
+      .b {
+        width: 90%;
+        height: 150px;
+        line-height: 150px;
+      }
+      .hhh1{
+        height: 420px;
+        width: 300px;
+        font-size:4px;
+      }
+      .t1{
+        width: 370px;
+        height: 300px;
+        border-style: solid;
+        border-color: blueviolet;
+}
+.bc2{
+    display:inline;
+    font-family: 'Fira Code', monospace;
+    letter-spacing: 1px;
+    justify-content: space-around;
+}
+      .bb2{
+        text-align: center;
+      }
+      .t2{
+        width: 400px;
+        height:400px;
+      }
+      .nav11{
+        font-size: 10px;
+      }
+      .Sign{
+        height: 20px;
+        width: 50px;
+        font-size: 7px;
+      }
+    
+}
+@media (max-width: 490px){
+    .nav11{
+        font-size: 7px;
+      }
+      .Sign{
+        height: 20px;
+        width: 50px;
+        font-size: 7px;
+      }
+      .t2{
+        width: 240px;
+        height:200px;
+      }
+      .t1{
+        width: 170px;
+        height: 220px;
+        border-style: solid;
+        border-color: blueviolet;
+}
+}
+
+@media (max-width: 490px){
+    .nav11{
+        font-size: 4.5px;
+      }
+      .Sign{
+        height: 17px;
+        width: 45px;
+        font-size: 5px;
+      }
+      .bb2{
+        font-size: 15px;
+      }
+}
+ #all{
+            margin: 200px 0px 0px 0px;
+            background-color:blueviolet;
+            height: 150px;
+            width: 500px;
+            padding: 40px 0px 50px 0px;
+            border-radius: 10px 70px 10px 60px;
+            color:aliceblue;
+            font-size: 20px;
+            box-shadow: 2px 2px 10px grey;
+        }
+        #all:hover{
+            margin: 200px 0px 0px 0px;
+            background-color:rgb(127, 32, 216);
+            height: 150px;
+            width: 500px;
+            padding: 40px 0px 50px 0px;
+            border-radius: 10px 70px 10px 61px;
+            color:aliceblue;
+            font-size: 20px;
+            box-shadow: 10px 10px 90px grey;
+        }
+        #username{
+            width: 300px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 20px;
+            box-shadow: 2px 2px 10px blue;
+        }
+        #password{
+            width: 300px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 20px;
+            box-shadow: 2px 2px 10px blue;
+        }
+        #username:hover{
+            width: 300px;
+            height: 40px;
+            background-color:antiquewhite;
+            border-radius: 23px;
+            font-size: 20px;
+            box-shadow: 10px 10px 20px rgb(83, 83, 83);
+        }
+
+        #password:hover{
+            width: 300px;
+            height: 40px;
+            background-color:antiquewhite;
+            border-radius: 23px;
+            font-size: 20px;
+            box-shadow: 10px 10px 20px rgb(83, 83, 83);
+        }
+        #BUTTON1{
+            background-color:rgb(34, 218, 138);
+            color:aliceblue;
+            height: 35px;
+            width:140px;
+            border-radius: 35px;
+        }
+
+        #BUTTON1:hover{
+            background-color:rgb(14, 194, 116);
+            color:aliceblue;
+            height: 35px;
+            width:140px;
+            margin: -2px 0px 0px 0px;
+            box-shadow: 6px 6px 15px rgb(61, 61, 234);
+            border-radius: 35px;
+        }
+
+
+        @media(max-width: 550px){
+
+             #all{
+                margin: 200px 0px 0px 0px;
+                background-color:blueviolet;
+                height: 75px;
+                width: 250px;
+                padding: 20px 0px 25px 0px;
+                border-radius: 5px 35px 35px 30px;
+                color:aliceblue;
+                font-size: 10px;
+                box-shadow: 2px 2px 10px grey;
+        }
+        #all:hover{
+            margin: 200px 0px 0px 0px;
+            background-color:rgb(127, 32, 216);
+            height: 75px;
+            width: 250px;
+            padding: 20px 0px 25px 0px;
+            border-radius: 5px 35px 5px 30px;
+            color:aliceblue;
+            font-size: 10px;
+            box-shadow: 10px 10px 90px grey;
+        }
+        #username{
+            width: 150px;
+            height: 20px;
+            border-radius: 10px;
+            font-size: 10px;
+            box-shadow: 2px 2px 10px blue;
+        }
+        #password{
+            width: 150px;
+            height: 20px;
+            border-radius: 10px;
+            font-size: 10px;
+            box-shadow: 2px 2px 10px blue;
+        }
+        #username:hover{
+            width: 150px;
+            height: 20px;
+            background-color:antiquewhite;
+            border-radius: 13px;
+            font-size: 10px;
+            box-shadow: 10px 10px 20px rgb(83, 83, 83);
+        }
+
+        #password:hover{
+            width: 150px;
+            height: 20px;
+            background-color:antiquewhite;
+            border-radius: 13px;
+            font-size: 10px;
+            box-shadow: 10px 10px 20px rgb(83, 83, 83);
+        }
+        #BUTTON1{
+            background-color:rgb(34, 218, 138);
+            color:aliceblue;
+            height: 20px;
+            width:70px;
+            border-radius: 20px;
+        }
+
+        #BUTTON1:hover{
+            background-color:rgb(14, 194, 116);
+            color:aliceblue;
+            height: 20px;
+            width:70px;
+            margin: -2px 0px 0px 0px;
+            box-shadow: 6px 6px 15px rgb(61, 61, 234);
+            border-radius: 20px;
+        }
+        }
+    </style>
+
+    <script>
+         attempts = 0;
+        function saving(){
+            if(attempts >= 3){
+                alert("sorry more than 3 times is not allowed")
+                return;
+            }
+            name = document.getElementById("username").value;
+            passw = document.getElementById("password").value;
+            if((name == "Abbas" || name == "LOAT" )&& passw == "1234"){
+                document.write("<h1> <i> === Welcome ",name," to your page again=== </i> </h1>")
+                
+            }
+            else{
+                    alert("so sorry something went wrong!!")
+                    attempts++
+                    if (attempts == 3){
+                        alert(" sorry  you tried 3 time and refresh the page to try again")
+                    }
+                }
+            
+        }
+    </script>
+
+
+</body>
+</html>

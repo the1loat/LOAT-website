@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOAT - Leader Of All Time</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="photes/current_logo.jpg" class="logo1">
+
+    <style>
+        .massege {
+            background-color: rgb(240, 240, 240);
+            color: rgb(0, 0, 0);
+            height: 37px;
+            width: 400px;
+            font-size: 16px;
+            border-radius: 15px;
+            padding-left: 10px;
+        }
+        .massege1 {
+            background-color: rgb(240, 240, 240);
+            color: rgb(0, 0, 0);
+            width: 400px;
+            height: 180px;
+            font-size: 16px;
+            border-radius: 15px;
+            padding: 10px;
+            resize: none;
+        }
+        .massege:hover, .massege1:hover {
+            background-color: rgb(226, 223, 223);
+        }
+        .bbbb1 {
+            background-color: blueviolet;
+            color: white;
+            width: 150px;
+            height: 37px;
+            border-radius: 35px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .bbbb1:hover {
+            background-color: rgba(137, 43, 226, 0.842);
+            width: 110px;
+        }
+        @media(max-width: 700px){
+            .massege, .massege1 {
+                width: 360px;
+            }
+        }
+    </style>
+</head>
+<body> 
+    <header class="he1">
+        <nav class="nav1">
+            <a href="index.html" class="c1">LOAT</a>
+            <a href="index.html">Home</a>
+            <a href="what_we_do.html">What We Do</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Team.html">Team</a>
+            <a href="Contact.html">Contact</a>
+            <a href="News.html">News</a>
+            <a href="Sign_Up.html"><button class="Sign">Sign Up</button></a>
+            <a href="Log_in.html"><button class="Sign">Log in</button></a>
+        </nav>
+        <center>
+            <h1>CONTACT</h1>
+            <img src="photes/current_logo.jpg" class="cu1"><br>
+            <h1><b>Leader <br> Of <br> All <br> Time</b></h1>
+        </center>
+    </header>
+
+    <h1 class="hi" style="text-align:center;">Welcome to LOAT Leader of All Time.</h1>
+    <br><br><br>
+    <center>
+        <h3>Fill the form below so we can get to know you and your needs better.</h3>
+    </center>
+    <br>
+
+    <!-- Contact Form -->
+    <center>
+        <form id="contact-form">
+            <input type="text" name="from_name" placeholder="Name::" class="massege" required><br><br>
+            <input type="email" name="from_email" placeholder="Email::" class="massege" required><br><br>
+            <input type="text" name="subject" placeholder="Subject::" class="massege" required><br><br>
+            <textarea name="message" placeholder="Message::" class="massege1" required></textarea><br><br>
+            <button type="submit" class="bbbb1">Submit</button>
+        </form>
+    </center>
+
+    <!-- EmailJS Script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("bCtYzXClX5wnZsKEk"); // ✅ Your Public Key
+        })();
+    </script>
+
+    <script>
+        const form = document.getElementById('contact-form');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_aq6iygo', 'template_4xp0ucm', this)
+                .then(() => {
+                    alert('✅ Message sent successfully!');
+                    form.reset();
+                }, (error) => {
+                    console.error('FAILED...', error);
+                    alert('❌ Failed to send message. Please try again.');
+                });
+        });
+    </script>
+
+</body>
+</html>
